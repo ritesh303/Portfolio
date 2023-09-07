@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ritesh Shekhar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ritesh Shekhar</div>
+        <div class="hamburger-menu">              
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span> 
+                <span></span> 
+                <span></span> 
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contacts" onclick="toggleMenu()">Contacts</a></li>  
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sectionProfile">
+            <img src="myImg.JPG"  class="myImg" alt="Ritesh profile picture"/>
+        </div>
+        <div class="sectionText">
+            <p class="sectionTextp">Hello , I'm</p>
+            <h1 class="title">Ritesh Shekhar</h1>
+            <p class="sectionRole">Frontend Developer</p>
+            <div class="btnContainer">
+                <button class="btn btn-color-2" onclick="window.open('ritesh resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contacts' ">Contact info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/LINKEDIN.png"
+                alt="likedin Logo"
+                class="icons"
+                onclick="location.href='https://linkedin.com/'"/>
+                <img src="./assests/github.png"
+                alt="likedin Logo"
+                class="icons"
+                onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sectionTextp">Want to know more</p>
+        <h1 class="title">About</h1>
+        <div class="sectionContainer">
+            <div class="sectionProfile sectionPicContainer">
+                <img src="myImg.JPG" 
+                alt="Imagelogo"
+                class="myImg about-pic"
+                />
+            </div>
+            <div class="aboutDetailsContainer">
+                <div class="aboutContainer">
+                    <div class="detailContainer">
+                        <img src="./assests/experience.png"
+                        alt="FrontendDeveloper"
+                        class="icons"/>
+                        <h3>Experience</h3>
+                        <p>2+ years<br/>Frontend Development</p>
+                    </div>
+                    <div class="detailContainer">
+                        <img src="./assests/education.png"
+                        alt="education"
+                        class="icons"/>
+                        <h3>Education</h3>
+                        <p>B.Tech <br/>Aditya College of Engineering and Technology</p>
+                    </div>
+                </div>
+                <div class="aboutprofile">
+                    <img src="./assests/puzzle.png"
+                    alt="Hobbies"
+                    class="icons"/>
+                    <h3>Hobbies</h3>
+                    <p>Chess <br/>Reasoning <br/> Cricket</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <img src="./assests/arrow.png"
+            alt="arrowlogo"
+            class="icons"
+            onClick="location.href='./#Experience' "
+            />
+        </div>
+    </section>
+    <section id="experience">
+        <p class="sectionTextp">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experienceDetailsContainer">
+            <div class="aboutContainer">
+                <div class="detailContainer">
+                    <h2 class="experienceSubTitle">Frontend Development</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>Html</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>Html</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>css</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>MaterialUI</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detailContainer">
+                    <h2 class="experienceSubTitle">Backend Development</h2>
+                    <div class="articleContainer">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>MongoDb</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>ExpressJs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="experienceicons" class="icons"/>
+                            <div>
+                                <h3>NodeJs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="arrow">
+            <img src="./assests/arrow.png"
+            alt="arrowlogo"
+            class="icons"
+            onClick="location.href='./#Experience' "
+            />
+        </div>
+    </section>
+    <section id="projects">
+        <p class="sectionTextp">Explore My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experienceDetailsContainer">
+            <div class="aboutContainer">
+                <div class="detailContainer ">
+                    <div class="articleContainer">
+                        <img
+                        src="./assests/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">Project one</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Github
+                        </button>
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+
+                </div>
+                <div class="detailContainer colorContainer">
+                    <div class="articleContainer">
+                        <img
+                        src="./assests/project-2.png"
+                        alt="Project 1"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">Project one</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Github
+                        </button>
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+
+                </div>
+                <div class="detailContainer colorContainer">
+                    <div class="articleContainer">
+                        <img
+                        src="./assests/project-3.png"
+                        alt="Project 1"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">Project one</h2>
+                    <div class="btnContainer">
+                        <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Github
+                        </button>
+                        <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                        </button>
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+        <div class="arrow">
+            <img src="./assests/arrow.png"
+            alt="arrowlogo"
+            class="icons"
+            onClick="location.href='./#Experience' "
+            />
+        </div>
+    </section>
+    <section id="contacts">
+        <p class="sectionTextp">Get In Touch</p>
+        <h1 class="title">Contacts</h1>
+        <div class="contactsContainer">
+            <div class="classmaincontainer">
+                <img src="./assests/email.png"
+                alt="email"
+                class="icons contactIcon"/>
+                <p><a href="www.google.com">ritesh.sinha@spinny.com</a></p>
+            </div> 
+            <div class="classmaincontainer">
+                <img src="./assests/LINKEDIN.png"
+                alt="email"
+                class="icons contactIcon"/>
+                <p><a href="www.linkedin.com">Linkdin Profile</a></p>
+            </div> 
+        </div>
+    </section>
+    <section id="footer">
+        <nav>
+            <div class="navLinksContainer">
+                <div class="navLinks">
+                    <ul class="nav-links">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <p class="footerP">copyright &copy 2023 Ritesh Shekhar. All rights reserved</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
